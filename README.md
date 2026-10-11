@@ -55,7 +55,7 @@ Prints do portfólio publicado (inserir após a publicação):
 
 ## Como acessar
 
-Endereço do portfólio publicado: [INSERIR LINK DO GITHUB PAGES APÓS A PUBLICAÇÃO]
+Endereço do portfólio publicado: (https://gustavofigueired07.github.io/portfolio-profissional/)
 
 ## Como executar localmente
 
