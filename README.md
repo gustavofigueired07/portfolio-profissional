@@ -44,15 +44,6 @@ Automação em Python que usa Selenium para ler mensagens do WhatsApp Web e grav
 - **Tecnologias:** Python, Selenium e openpyxl
 - **Repositório:** https://github.com/gustavofigueired07/gestao_vendas
 
-## Evidências visuais
-
-Prints do portfólio publicado (inserir após a publicação):
-
-- [INSERIR PRINT DA PÁGINA INICIAL NO COMPUTADOR]
-- [INSERIR PRINT DA PÁGINA NO CELULAR]
-- [INSERIR PRINT DO TEMA ESCURO]
-- [INSERIR PRINT DA PÁGINA DO REPOSITÓRIO NO GITHUB]
-
 ## Como acessar
 
 Endereço do portfólio publicado: (https://gustavofigueired07.github.io/portfolio-profissional/)
