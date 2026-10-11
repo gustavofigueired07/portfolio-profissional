@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Informa ao navegador que a página tem tema claro e escuro -->
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Portfólio profissional de Gustavo Figueiredo Soares, analista de contas médicas e estudante de Análise e Desenvolvimento de Sistemas.">
+  <title>Gustavo Figueiredo Soares | Portfólio profissional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Link para quem navega pelo teclado pular direto ao conteúdo -->
+  <a class="pular-menu" href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- Cabeçalho e menu com links internos -->
+  <header class="cabecalho">
+    <a class="marca" href="#inicio">Gustavo Figueiredo Soares</a>
+    <nav aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#competencias-tecnicas">Competências técnicas</a></li>
+        <li><a href="#competencias-comportamentais">Competências comportamentais</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#curriculo">Currículo</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- Apresentação inicial -->
+    <section id="inicio" class="inicio">
+      <h1>Gustavo Figueiredo Soares</h1>
+      <p class="titulo-profissional">Analista de Contas Médicas e Estudante de ADS</p>
+      <p class="interesses">Interesse em análise de dados e automação.</p>
+      <div class="botoes">
+        <a class="botao" href="#projetos">Ver projetos</a>
+        <a class="botao botao-secundario" href="assets/curriculo.pdf" download>Baixar currículo</a>
+      </div>
+      <!-- FOTO: por enquanto o portfólio não tem foto. Se quiser incluir depois, use:
+      <img src="assets/foto-perfil.jpg" alt="Foto de Gustavo Figueiredo Soares" width="240" height="240"> -->
+    </section>
+
+    <!-- Sobre mim -->
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <p>Estudante de Análise e Desenvolvimento de Sistemas, autodidata e disposto a evoluir na área de tecnologia. Já automatizei planilhas no Excel e colaborei em projeto acadêmico de Gestão de Vendas, no qual utilizei Selenium, uma ferramenta que aprendi por conta própria, fora das aulas.</p>
+    </section>
+
+    <!-- Formação e cursos -->
+    <section id="formacao">
+      <h2>Formação</h2>
+
+      <h3>Formação acadêmica</h3>
+      <ul class="lista-formacao">
+        <li>
+          <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong>
+          <span>UNICSUL Guarulhos, conclusão prevista para o fim de 2027</span>
+        </li>
+        <li>
+          <strong>Técnico em Administração</strong>
+          <span>ETEC Prof Horacio Augusto, concluído no fim de 2023</span>
+        </li>
+      </ul>
+
+      <h3>Cursos</h3>
+      <ul class="lista-formacao">
+        <li>
+          <strong>Inglês avançado</strong>
+          <span>Centro Britânico Guarulhos</span>
+        </li>
+        <li>
+          <strong>Pacote Office básico</strong>
+          <span>Fundação Bradesco</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Competências técnicas, com o nível informado por você -->
+    <section id="competencias-tecnicas">
+      <h2>Competências técnicas</h2>
+      <ul class="lista-competencias">
+        <li><span class="competencia">Excel</span> <span class="nivel">Intermediário</span></li>
+        <li><span class="competencia">Python</span> <span class="nivel">Inicial</span></li>
+        <li><span class="competencia">C</span> <span class="nivel">Inicial</span></li>
+        <li><span class="competencia">HTML</span> <span class="nivel">Inicial</span></li>
+        <li><span class="competencia">Selenium</span> <span class="nivel">Inicial</span></li>
+        <li><span class="competencia">Pandas</span> <span class="nivel">Inicial</span></li>
+        <li><span class="competencia">NumPy</span> <span class="nivel">Inicial</span></li>
+      </ul>
+    </section>
+
+    <!-- Competências comportamentais, cada uma com um exemplo real -->
+    <section id="competencias-comportamentais">
+      <h2>Competências comportamentais</h2>
+      <article>
+        <h3>Trabalho em equipe</h3>
+        <p>No TCC da ETEC, sobre Indústria 4.0, trabalhei em uma equipe com mais de 10 pessoas e o projeto foi concluído com êxito. Fui responsável por introduzir o tema ao grupo e abordar as perspectivas futuras e a crescente exigência de especialização profissional.</p>
+      </article>
+      <article>
+        <h3>Dedicação</h3>
+        <p>No trabalho, costumo ser dos primeiros a chegar e dos últimos a sair. Uso meu tempo livre para aprender novas ferramentas que complementem minhas atividades, com foco em análise de dados e automação.</p>
+      </article>
+    </section>
+
+    <!-- Projetos (cartões). Para adicionar outro projeto, copie um bloco <article class="cartao-projeto"> -->
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <article class="cartao-projeto">
+        <h3>Gestão de Vendas</h3>
+
+        <!-- IMAGEM DO PROJETO: [INFORMAÇÃO A SER PREENCHIDA]
+        Quando tiver uma imagem (sem nomes nem telefones reais), salve em assets/projeto-01.png e use:
+        <img src="assets/projeto-01.png" alt="Descreva aqui o que a imagem mostra" width="640" height="360"> -->
+
+        <p><strong>Objetivo:</strong> ajudar a mãe de um amigo, que recebia informações sobre aluguel de imóveis e apartamentos de colegas de trabalho, a organizar esses dados em uma planilha do Excel de forma automática.</p>
+        <p><strong>Como funciona:</strong> automação em Python que usa Selenium para ler mensagens do WhatsApp Web e gravá-las no Excel.</p>
+        <p><strong>Tecnologias:</strong> Python, Selenium e openpyxl.</p>
+        <p><strong>Minha participação:</strong> projeto em grupo. Dei a ideia e ajudei na parte de uso do Selenium.</p>
+        <p><strong>Aprendizados:</strong> aprofundei meus conhecimentos em Python e aprendi a usar o Selenium.</p>
+        <a class="botao" href="https://github.com/gustavofigueired07/gestao_vendas" target="_blank" rel="noopener noreferrer">Ver código no GitHub</a>
+      </article>
+    </section>
+
+    <!-- Currículo em PDF -->
+    <section id="curriculo">
+      <h2>Currículo</h2>
+      <p>Baixe meu currículo em PDF.</p>
+      <a class="botao" href="assets/curriculo.pdf" download>Baixar currículo (PDF)</a>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+      <h2>Contato</h2>
+      <ul class="lista-contato">
+        <li><a class="botao" href="https://github.com/gustavofigueired07" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a class="botao" href="https://www.linkedin.com/in/gustavo-figueiredo-soares-8b39352b2" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a class="botao" href="mailto:gustavo.figueiredo2005@gmail.com">gustavo.figueiredo2005@gmail.com</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Rodapé com autoria -->
+  <footer class="rodape">
+    <p>Desenvolvido por Gustavo Figueiredo Soares como projeto da disciplina Design Profissional.</p>
+  </footer>
+
+</body>
+</html>

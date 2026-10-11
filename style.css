@@ -1,0 +1,297 @@
+/* ===== Cores e medidas (para mudar o visual, altere aqui) ===== */
+:root {
+  --fundo: #f7f6fb;
+  --superficie: #ffffff;
+  --texto: #1e1b2e;
+  --texto-suave: #4a4560;
+  --roxo: #3b1f6b;
+  --azul: #1f4e9e;
+  --link: #1f4e9e;
+  --borda: #d9d4e7;
+  --texto-no-roxo: #ffffff;
+  --foco: #1f4e9e;
+  --espaco: 1.5rem;
+}
+
+/* Tema escuro: ativado automaticamente conforme a configuração do aparelho */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo: #14111f;
+    --superficie: #1e1a2e;
+    --texto: #ece9f5;
+    --texto-suave: #b9b3cf;
+    --roxo: #b9a2f0;
+    --azul: #7da8f5;
+    --link: #8db4ff;
+    --borda: #38314f;
+    --texto-no-roxo: #14111f;
+    --foco: #8db4ff;
+  }
+}
+
+/* ===== Base ===== */
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem; /* evita que o menu fixo cubra o título da seção */
+}
+
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.2;
+  color: var(--roxo);
+}
+
+h2 { font-size: 1.75rem; margin: 0 0 1rem; }
+h3 { font-size: 1.2rem; margin: 1.5rem 0 0.5rem; }
+
+p { max-width: 70ch; margin: 0 0 1rem; }
+
+a { color: var(--link); }
+
+/* Foco visível para quem navega pelo teclado */
+a:focus-visible {
+  outline: 3px solid var(--foco);
+  outline-offset: 3px;
+}
+
+/* ===== Link "Ir para o conteúdo" (aparece só com o foco do teclado) ===== */
+.pular-menu {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  padding: 0.6rem 1rem;
+  background: var(--roxo);
+  color: var(--texto-no-roxo);
+  border-radius: 4px;
+  z-index: 20;
+}
+.pular-menu:focus { top: 1rem; }
+
+/* ===== Cabeçalho e menu ===== */
+.cabecalho {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 2rem;
+  padding: 0.75rem var(--espaco);
+  background: var(--superficie);
+  border-bottom: 1px solid var(--borda);
+}
+
+.marca {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 1.15rem;
+  color: var(--roxo);
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 0.25rem 0.1rem;
+  font-size: 0.95rem;
+  color: var(--texto);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.menu a:hover { border-bottom-color: var(--azul); }
+
+/* ===== Conteúdo principal ===== */
+main {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 0 var(--espaco);
+}
+
+main > section {
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--borda);
+}
+
+/* ===== Início (destaque principal) ===== */
+main > .inicio {
+  margin-top: 2rem;
+  padding: 3rem 2rem;
+  background: var(--roxo);
+  color: var(--texto-no-roxo);
+  border: 0;
+  border-left: 8px solid var(--azul);
+  border-radius: 6px;
+}
+
+.inicio h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  color: var(--texto-no-roxo);
+}
+
+.titulo-profissional {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.interesses { margin-bottom: 1.5rem; }
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* ===== Botões ===== */
+.botao {
+  display: inline-block;
+  padding: 0.65rem 1.25rem;
+  background: var(--roxo);
+  color: var(--texto-no-roxo);
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid var(--roxo);
+  border-radius: 4px;
+  overflow-wrap: anywhere;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.botao:hover {
+  background: var(--azul);
+  border-color: var(--azul);
+  color: #ffffff;
+}
+
+/* Botões dentro do destaque principal (fundo roxo) */
+.inicio .botao {
+  background: var(--texto-no-roxo);
+  color: var(--roxo);
+  border-color: var(--texto-no-roxo);
+}
+.inicio .botao-secundario {
+  background: transparent;
+  color: var(--texto-no-roxo);
+}
+.inicio .botao:hover {
+  background: var(--azul);
+  border-color: var(--azul);
+  color: #ffffff;
+}
+.inicio a:focus-visible { outline-color: var(--texto-no-roxo); }
+
+/* ===== Formação ===== */
+.lista-formacao {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.lista-formacao li {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 1rem;
+  background: var(--superficie);
+  border-left: 4px solid var(--azul);
+}
+
+.lista-formacao span { color: var(--texto-suave); }
+
+/* ===== Competências técnicas ===== */
+.lista-competencias {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 0.75rem;
+}
+
+.lista-competencias li {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 1rem;
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+}
+
+.competencia { font-weight: 700; }
+.nivel { color: var(--texto-suave); font-size: 0.95rem; }
+
+/* ===== Competências comportamentais ===== */
+#competencias-comportamentais article {
+  max-width: 70ch;
+}
+
+/* ===== Cartão de projeto ===== */
+.cartao-projeto {
+  max-width: 44rem;
+  padding: 1.5rem;
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-top: 4px solid var(--azul);
+  border-radius: 6px;
+}
+
+.cartao-projeto h3 { margin-top: 0; }
+.cartao-projeto img { max-width: 100%; height: auto; margin-bottom: 1rem; }
+
+/* ===== Contato ===== */
+.lista-contato {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ===== Rodapé ===== */
+.rodape {
+  margin-top: 2rem;
+  padding: 1.5rem var(--espaco);
+  text-align: center;
+  background: var(--superficie);
+  border-top: 1px solid var(--borda);
+  color: var(--texto-suave);
+}
+.rodape p { margin: 0 auto; }
+
+/* ===== Celulares ===== */
+@media (max-width: 40rem) {
+  html { scroll-padding-top: 1rem; }
+
+  .cabecalho { position: static; flex-direction: column; align-items: flex-start; }
+  main > .inicio { padding: 2rem 1.25rem; }
+  .botao { width: 100%; text-align: center; }
+  .botoes, .lista-contato { flex-direction: column; }
+}
+
+/* Respeita quem prefere menos movimento */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .botao { transition: none; }
+}
